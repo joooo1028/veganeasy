@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-sytle" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<link rel="apple-touch-startup-image" href=".png"/>
+<link rel="stylesheet" type="text/css" href="css/문의하기.css" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/환경설정.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+<script type="text/javascript" src="js/tab_bar.js"></script>
+<title>비건이지</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <h1>문의하기</h1>
+        <div class="btn_prev"><a href="마이페이지.html"><img src="images/문의하기/패스 24.png" alt="뒤로가기"/></a></div>
+        <nav id="gnb">
+            <h2 class="blind">메뉴</h2>
+            <div class="btn_close"><a href="#"><img src="images/메뉴/닫기.png" alt="닫기"/></a></div>
+            <span><img src="images/메뉴/프로필테두리.png" alt="다미다미의 프로필사진" /></span>
+            <p>안녕하세요,<br/><strong>다미다미</strong> <span>님</span></p>
+            <ul>
+            <li><a href="#">레시피</a></li>
+            <li><a href="#">식당</a></li>
+            <li><a href="#">카페&베이커리</a></li>
+            <li><a href="#">라이브</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">환경설정</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <div id="container">
+        <section>
+            <ul>
+            <li><img src="images/문의하기/프로필테두리.png" alt="운영자프로필사진" /></li>
+            <li>문의내용을 말씀해주세요</li>
+            </ul>
+            <p>다음 업데이트때 이런게 추가되면 좋겠어요</p>
+            <ul>
+            <li><img src="images/문의하기/프로필테두리.png" alt="운영자프로필사진" /></li>
+            <li>해당기능은 다음 업데이트에 반영될 예정입니다.<br/> 문의 감사합니다^^</li>
+            </ul>
+            <form action="/" method="post">
+            <fieldset>
+            <legend class="blind">문의하기</legend>
+            <span class="camera"><img src="images/문의하기/Camera.png" alt="카메라 아이콘" /></span>
+            <label for="chat" class="blind">채팅</label>
+            <input type="text" id="chat" />
+            <input type="button" value="전송" />
+            </fieldset>
+            </form>
+        </section>
+    </div>
+    <!-- //container -->
+    <hr/>
+    <!-- footer -->
+    <footer>
+        <div class="foot_inner">
+            <div class="foot_inner">
+                <div class="bar-item pre-active menu">
+                    <div class="bar-fluid"></div>
+                    <div class="drop"></div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="bar-item home">
+                    <div class="bar-fluid"></div>
+                    <div class="drop"></div>
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="bar-item mypage">
+                    <div class="bar-fluid"></div>
+                    <div class="drop"></div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

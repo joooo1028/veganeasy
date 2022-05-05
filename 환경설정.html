@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-sytle" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<link rel="apple-touch-startup-image" href=".png"/>
+<link rel="stylesheet" type="text/css" href="css/환경설정.css" />
+<title>비건이지</title>
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/환경설정.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+<script type="text/javascript" src="js/tab_bar.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <h1>환경설정</h1>
+        <nav id="gnb">
+            <h2 class="blind">메뉴</h2>
+            <div class="btn_close"><a href="#"><img src="images/메뉴/닫기.png" alt="닫기"/></a></div>
+            <span><img src="images/메뉴/프로필테두리.png" alt="다미다미의 프로필사진" /></span>
+            <p>안녕하세요,<br/><strong>다미다미</strong> 님</p>
+            <ul>
+            <li><a href="#">레시피</a></li>
+            <li><a href="#">식당</a></li>
+            <li><a href="#">카페&베이커리</a></li>
+            <li><a href="#">라이브</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">환경설정</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <div id="container">
+        <section>
+            <form action="/" method="post">
+            <fieldset>
+            <legend class="blind">알림설정</legend>
+            <ul>
+                <li>
+                    <ul>
+                    <li>
+                        <input type="checkbox" id="event" checked/>
+                        <label for="event"><span>이벤트 알림</span></label>
+                    </li>
+                    <li>이벤트 소식의 알림을 받습니다.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                    <li>
+                        <input type="checkbox" id="newalam" checked/>
+                        <label for="newalam"><span>새로운 소식 알림</span></label>
+                    </li>
+                    <li>새로운 소식이 올때마다 알림을 받습니다.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                    <li>
+                        <input type="checkbox" id="notice" checked/>
+                        <label for="notice"><span>공지사항 알림</span></label>
+                    </li>
+                    <li>공지사항이 뜨면 알림을 받습니다.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                    <li>
+                        <input type="checkbox" id="marketing"/>
+                        <label for="marketing"><span>마케팅 알림</span></label>
+                    </li>
+                    <li>마케팅관련 수신을 받습니다.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                    <li>
+                        <input type="checkbox" id="alam"/>
+                        <label for="alam"><span>알림설정</span></label>
+                    </li>
+                    <li>어떤 알림인지에 대한 설명</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                    <li>
+                        <input type="checkbox" id="alam"/>
+                        <label for="alam"><span>알림설정</span></label>
+                    </li>
+                    <li>어떤 알림인지에 대한 설명</li>
+                    </ul>
+                </li>
+                </ul>
+            </fieldset>
+            </form>
+        </section>
+    </div>
+    <!-- //container -->
+    <hr/>
+    <!-- footer -->
+    <footer>
+        <div class="foot_inner">
+            <div class="bar-item pre-active menu">
+                <div class="bar-fluid"></div>
+                <div class="drop"></div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="bar-item home">
+                <div class="bar-fluid"></div>
+                <div class="drop"></div>
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="bar-item mypage">
+                <div class="bar-fluid"></div>
+                <div class="drop"></div>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

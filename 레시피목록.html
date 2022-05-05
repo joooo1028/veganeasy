@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-sytle" content="black" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon-precomposed" href=".png" />
+<link rel="apple-touch-startup-image" href=".png"/>
+<link rel="stylesheet" type="text/css" href="css/레시피목록.css" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/레시피목록.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+<script type="text/javascript" src="js/tab_bar.js"></script>
+<title>비건이지</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <h1 class="blind">App</h1>
+        <h2>오늘의 추천레시피는?</h2>
+        <nav id="gnb">
+            <h2 class="blind">메뉴</h2>
+            <div class="btn_close"><a href="#"><img src="images/메뉴/닫기.png" alt="닫기"/></a></div>
+            <span><img src="images/메뉴/프로필테두리.png" alt="다미다미의 프로필사진" /></span>
+            <p>안녕하세요,<br/><strong>다미다미</strong> <span>님</span></p>
+            <ul>
+            <li><a href="#">레시피</a></li>
+            <li><a href="#">식당</a></li>
+            <li><a href="#">카페&베이커리</a></li>
+            <li><a href="#">라이브</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">환경설정</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <div id="container">
+        <section>
+            <form action="/" method="post">
+            <fieldset>
+            <legend class="blind">검색</legend>
+            <label for="srch" class="blind">검색</label>
+            <input type="search" id="srch" />
+            <button class="search"><img src="images/레시피목록/찾기.png" alt="검색버튼" /></button>
+            </fieldset>
+            </form>
+            <div class="filter">
+                <img src="images/관심목록/필터.png" alt="필터아이콘" />
+                <div class="filter_inner">
+                    <div class="filter_haeder">
+                        <h3>필터</h3>
+                    </div>
+                    <p>음식종류</p>
+                    <ul>
+                    <li><span>한식</span><img src="./images/필터/그룹 21.png" alt="한식아이콘" /></li>
+                    <li><span>중식</span><img src="./images/필터/그룹 22.png" alt="한식아이콘" /></li>
+                    <li><span>일식</span><img src="./images/필터/그룹 23.png" alt="한식아이콘" /></li>
+                    <li><span>양식</span><img src="./images/필터/그룹 24.png" alt="한식아이콘" /></li>
+                    </ul>
+                    <form action="/" method="post" >
+                    <fieldset>
+                    <legend class="blind">필터</legend>
+                    <ul class="rank">
+                    <li>
+                        <input type="checkbox" id="starscore" />
+                        <label for="starscore"><span>별점순</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="comentscore" />
+                        <label for="comentscore"><span>코멘트순</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="time" />
+                        <label for="time"><span>시간순</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="distance" />
+                        <label for="distance"><span>거리순</span></label>
+                    </li>
+                    </ul>  
+                    </fieldset>
+                    </form>
+                    <button class="apply">적용하기</button>
+                </div>
+            </div>
+        </section>
+        <div id="content">
+            <section>
+                <span class="heart"><img src="images/레시피목록/합치기 1.png" alt="하트" /></span>
+                <a href="상세페이지.html"><img src="images/레시피목록/방울토마토마리네이드.png" alt="방울토마토마리네이드"></a>
+                <div>
+                <p>방울토마토마리네이드</p>
+                <span class="star"><img src="images/레시피목록/그룹 8.png" alt="별점" /></span>
+                </div>
+            </section>
+            <section>
+                <span class="heart"><img src="images/레시피목록/빈하트.png" alt="하트" /></span>
+                <a href="상세페이지.html"><img src="images/레시피목록/요거트볼.png" alt="요거트볼"></a>
+                <div>
+                <p>요거트볼</p>
+                <span class="star"><img src="images/레시피목록/그룹 8.png" alt="별점" /></span>
+                </div>
+            </section>
+            <section>
+                <span class="heart"><img src="images/레시피목록/빈하트.png" alt="하트" /></span>
+                <a href="상세페이지.html"><img src="images/레시피목록/파스타샐러드.png" alt="파스타샐러드"></a>
+                <div>
+                <p>파스타샐러드</p>
+                <span class="star"><img src="images/레시피목록/그룹 8.png" alt="별점" /></span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- //container -->
+    <hr/>
+    <!-- footer -->
+    <footer>
+        <div class="foot_inner">
+            <div class="bar-item pre-active menu">
+                <div class="bar-fluid"></div>
+                <div class="drop"></div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="bar-item home">
+                <div class="bar-fluid"></div>
+                <div class="drop"></div>
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="bar-item mypage">
+                <div class="bar-fluid"></div>
+                <div class="drop"></div>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

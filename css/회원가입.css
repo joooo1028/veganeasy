@@ -1,0 +1,53 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common */
+body{font-size: 15px; font-family: 'GowunBatang-Regular'; color: #000;}
+a{text-decoration: none; color: #000;}
+
+/* layout */
+header{display: none;  width: 375px; height: 95px; background: #5a8d26;}
+#container{position: relative; width: 375px;height: 812px;background: #fff;}
+
+/* section */
+section > h2{position: absolute;top: 60px; left: 50%; transform: translateX(-50%); width: 255px;
+    color: #104b0b; font-size:28px; font-weight: bold;}
+section form{position: relative; top: 175px; padding: 0 15px;}
+section label{font-size: 18px; font-weight: bold; color: #104b0b; text-align: center;}
+section label:nth-of-type(1){position: absolute; top: 10px;}
+section label:nth-of-type(2){position: absolute;top: 70px;}  
+section label:nth-of-type(3){position: absolute;top: 132px; width: 70px; text-align: center;}
+section label:nth-of-type(4){position: absolute;top: 205px;}  
+section label:nth-of-type(5){position: absolute;top: 265px;}  
+section label:nth-of-type(6){position: absolute;top: 325px;}  
+section #usrid{position: absolute; right: 108px;}
+section input[type="text"]:first-of-type{width: 163px; height: 45px; border: solid 1px #5a8d26; border-radius: 15px;}    
+section #userpw{position: absolute; right: 20px; top: 60px;}      
+section #userpwchk{position: absolute; top: 125px; right: 20px;}     
+section input[type="password"]{width: 252px; height: 45px; border: solid 1px #5a8d26; border-radius: 15px;}
+section input[type="email"]{position: absolute; right: 20px; top: 194px; width: 252px; height: 45px; 
+                            border: solid 1px #5a8d26; border-radius: 15px;}
+section input[type="date"]{position: absolute; right: 20px; top: 254px; width: 252px; height: 45px; 
+                        border: solid 1px #5a8d26; border-radius: 15px;}
+section #nickname{position: absolute; right: 20px; top: 314px; }
+section input[type="text"]:last-of-type{width: 252px; height: 45px; border: solid 1px #5a8d26; border-radius: 15px;}
+section input::placeholder{font-size: 10px; padding-left: 15px; color: #d6d6d6;}
+section button.overlap{position: absolute; top: 5px; right: 20px; width: 74px;height: 35px;border-radius: 10px;background-color: #fecc47; border: none;
+            color: #104b0b; font-family: 'GowunBatang-Regular'; font-size: 14px; font-weight: bold;}
+section button.login{position: absolute;top: 414px;left: 50%; transform: translateX(-50%); width: 339px; height: 50px;
+                    background-color: #fecc47; border-radius: 20px; border: none;
+                    color: #104b0b; font-family: 'GowunBatang-Regular'; font-size: 20px; font-weight: bold;}
+section button:hover{background-color: #FA990E;}
+

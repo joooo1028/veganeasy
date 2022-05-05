@@ -1,0 +1,44 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common */
+body{font-size: 15px; font-family: 'GowunBatang-Regular'; color: #000;}
+a{text-decoration: none; color: #000;}
+
+/* layout */
+header{display: none;  width: 375px; height: 95px; background: #5a8d26;}
+#container{position: relative; width: 375px;height: 812px; background: #ffff;}
+
+/* section */
+section > h2{position: absolute;top: 58px; left: 50%; transform: translateX(-50%);  
+    color: #104b0b; font-size:55px; font-weight: bold; letter-spacing: 20px;}
+section > span:first-of-type{position: absolute; top: 205px; left: 50%; transform: translateX(-50%); width: 235.6px;}
+section > p:first-of-type{position: absolute; top: 386px; left: 50%; transform: translateX(-50%); width: 247px;
+                        font-size: 25px; font-weight: bold;color: #104b0b; text-align: center;}
+fieldset > input[type="text"]{position: absolute; top: 434px; left: 50%; transform: translateX(-50%);
+                            width: 341px; height: 45px; border: solid 1px #5a8d26; border-radius: 15px;}
+fieldset > input[type="password"]{position: absolute; top: 513px; left: 50%; transform: translateX(-50%);
+                            width: 341px; height: 45px; border: solid 1px #5a8d26; border-radius: 15px;}       
+section > button{position: absolute; bottom: 170px; left: 50%; transform: translateX(-50%);
+                width: 345px; height: 50px; border: none; border-radius: 20px; background-color: #fecc47;} 
+section > button:hover{background-color: #FA990E;}         
+section > button > span{font-size: 20px; color: #104b0b; font-weight: bold; font-family: 'GowunBatang-Regular';}  
+section > ul > li{position: absolute;}
+section > ul > li:first-child{bottom:136px; left: 26px;}   
+section > ul > li:nth-child(2){bottom:136px; left: 50%; transform: translateX(-50%);} 
+section > ul > li:last-child{bottom:136px; right: 26px;}               
+section > ul > li > a{font-size: 12px; font-weight: 540; font-family:NotoSansKR;color: #5a8d26;}
+section > p:nth-of-type(2){position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%);}
+section > p:nth-of-type(2)>a{font-size: 14px; font-weight: 540; font-family:NotoSansKR; color: #5a8d26;}

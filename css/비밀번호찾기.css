@@ -1,0 +1,42 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common */
+body{font-size: 15px; font-family: 'GowunBatang-Regular'; color: #000;}
+a{text-decoration: none; color: #000;}
+
+/* layout */
+header{display: none;  width: 375px; height: 95px; background: #5a8d26;}
+#container{position: relative; width: 375px;height: 812px; background: #fecc47;}
+
+
+/* section */
+section > h2{position: absolute;top: 70px; left: 50%; transform: translateX(-50%); width: 169px; color: #fff; font-size:30px; font-weight: bold;}
+section form{position: relative; top: 160px; padding: 0 15px;}
+section label{display: block;margin-bottom: 16px;font-size: 18px; font-weight: bold;color: #fff;}
+section input[type="text"]{width: 345px; height: 50px; margin-bottom: 17px; border-radius: 15px; border: solid 1px #5a8d26;}
+section input[type="email"]{width: 220px; height: 50px; margin-bottom: 17px; border-radius: 15px; border: solid 1px #5a8d26;}
+section input[type="number"]{width: 345px; height: 50px; margin-bottom: 17px; border-radius: 15px; border: solid 1px #5a8d26;}
+section input::placeholder{font-size: 10px; padding-left: 15px; color: #d6d6d6;}
+section button.certify{position: absolute; top: 157px; right: 15px; width: 100px; height: 45px; 
+                            border-radius: 15px; background: #5a8d26; border: none;
+                            font-size: 14px; color: #fff; font-family: 'GowunBatang-Regular';}
+section button.check{position: absolute; bottom: 235px; left: 50%; transform: translateX(-50%); width: 100px; height: 45px; 
+                    border-radius: 15px; background: #5a8d26; border: none;
+                    font-size: 20px; color: #fff; font-family: 'GowunBatang-Regular';}
+
+
+
+

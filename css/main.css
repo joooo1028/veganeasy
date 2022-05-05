@@ -1,0 +1,92 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common */
+body{font-size: 15px; font-family: 'GowunBatang-Regular'; color: #000;}
+a{text-decoration: none; color: #000;}
+
+/* layout */
+header{display: none;  width: 375px; height: 95px; background: #5a8d26;}
+#container{position: relative; width: 375px;height: 812px;background: #fff;}
+
+/* section */
+section > h2{position: absolute;top: 355px; left: 50%; transform: translateX(-50%); opacity: 0; 
+            color: #104b0b; font-size:75px; font-weight: bold;letter-spacing: 20px;transition: all 1s linear 1.2s;}
+section > p{position: absolute; color: #fa990e; font-weight: bold; font-size: 30px;}
+section > p:nth-of-type(1){top: 194px; left: 36px; opacity: 0; transition: all 0.3s linear 0.8s;}
+section > p:nth-of-type(2){top: 278px; right: 37px; opacity: 0; transition: all 0.5s linear 1.0s;}
+section span:nth-of-type(1){position: absolute; top: 118px; right: 26px; opacity: 0; transform: translateY(-500px);
+                            transition: all 1.0s ease-out 0.8s;}
+section span:nth-of-type(2){position: absolute; top: 267.5px; left: 39px; opacity: 0; transform: translateY(-800px);
+                            transition: all 1.2s ease-out 0.8s;}
+section span:nth-of-type(3){position: absolute; top: 296px; left: 117.5px; opacity: 0; transform: translateY(-850px);
+                            transition: all 1.2s ease-out 0.8s;}
+section span:nth-of-type(4){position: absolute; top: 351px; left: 42.5px; opacity: 0; transform: translateY(-900px);
+                            transition: all 1.2s ease-out 0.8s;}
+section span:nth-of-type(5){position: absolute; top: 360px; right: 58px; opacity: 0; transform: translateY(-950px);
+                            transition: all 1.5s ease-out 0.8s;}
+section span:nth-of-type(6){position: absolute; top: 495px; left: 54px; opacity: 0; transform: translateY(-1000px);
+                            transition: all 1.5s ease-out 0.8s;}
+section span:nth-of-type(7){position: absolute; bottom: 150px;left: 50%; opacity: 0; transform: translateX(-50%); width: 307.5px;
+                            transition: all 0.5s linear 0.3s;}
+
+section.on > p:nth-of-type(1){opacity: 1;}
+section.on > p:nth-of-type(2){opacity: 1;}
+section.on > h2{opacity: 1;}
+section.on span:nth-of-type(1){opacity: 1; transform: translateY(0); animation: ani 5s linear 0s infinite alternate forwards;}
+section.on span:nth-of-type(2){opacity: 1; transform: translateY(0);animation: ani3 5s linear 0s infinite alternate forwards;}
+section.on span:nth-of-type(3){opacity: 1; transform: translateY(0);animation: ani3 10s linear 0s infinite alternate forwards;}
+section.on span:nth-of-type(4){opacity: 1; transform: translateY(0);animation: ani3 8s linear 0s infinite alternate forwards;}
+section.on span:nth-of-type(5){opacity: 1; transform: translateY(0);animation: ani2 8s linear 0s infinite alternate forwards;}
+section.on span:nth-of-type(6){opacity: 1; transform: translateY(0);animation: ani 8s linear 0s infinite alternate forwards;}
+section.on span:nth-of-type(7){opacity: 1; }
+@keyframes ani {
+    0%{transform: rotate(15deg);}
+    15%{transform: rotate(0);}
+    30%{transform: rotate(15deg);}
+    45%{transform: rotate(0);}
+    60%{transform: rotate(15deg);}
+    75%{transform: rotate(0);}
+    90%{transform: rotate(15deg);}
+    100%{transform: rotate(0);}
+}
+
+@keyframes ani2 {
+    0%{transform: rotate(-15deg);}
+    15%{transform: rotate(0);}
+    30%{transform: rotate(-15deg);}
+    45%{transform: rotate(0);}
+    60%{transform: rotate(-15deg);}
+    75%{transform: rotate(0);}
+    90%{transform: rotate(-15deg);}
+    100%{transform: rotate(0);}
+}
+
+@keyframes ani3 {
+    0%{transform: scale(1);}
+    15%{transform: scale(1.2);}
+    30%{transform: scale(1);}
+    45%{transform: scale(1.2);}
+    60%{transform: scale(1);}
+    75%{transform: scale(1.2);}
+    90%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+}
+
+
+
+
+
+

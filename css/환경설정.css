@@ -1,0 +1,157 @@
+@import url(reset.css);
+
+/* 메인메뉴.css */
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common */
+body{font-size: 15px; font-family: 'GowunBatang-Regular'; color: #000;}
+a{text-decoration: none; color: #000;}
+
+/* layout */
+header{position: relative; width: 375px; height: 95px; background: #ffff;}
+#container{position: relative; width: 375px;height: 642px;background: #ffff;}
+footer{position: relative; width: 375px;height: 75px;background: #5a8d26;}
+    .foot_inner{width: 100%; height: 100%; padding: 23.4px 35.5px; }
+
+/* header */
+header h1{position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 30px; font-weight: bold; color: #104b0b;}
+nav{z-index: 10; opacity: 0; position: absolute; top: 0;width: 267px; height: 737px;background:#fecc47; transform: translateX(-500px);
+    transition: all 0.5s linear 0.8s;}
+nav > div.btn_close{position: absolute; top: 21px; left: 16.5px;}
+nav > span{position: absolute; top: 50px; right: 44px;}
+nav > p{position: absolute; top: 64px; left: 17px; font-family: 'GowunBatang-Bold'; color: #fa990e;}
+nav > p > strong{display: inline-block; color: #104b0b; font-size: 20px; margin-top: 6px;}
+nav > p > span{color: #104b0b;}
+nav > ul{position: absolute; top: 129.5px;}
+nav > ul li{position: relative; width: 266.5px; height: 102px; border-top: solid 1px #5a8d26;}
+nav > ul li a{display: block; position: absolute; top: 33px; left: 17px;
+            font-size: 25px; font-family: 'GowunBatang-Bold'; color: #104b0b;}
+#gnb.on{opacity: 1; transform: translateX(0px);}
+
+/* container */
+section{padding: 50px 17px 0;}
+section ul{position: relative; width: 340px; margin:0 auto;}
+section ul li ul{position: relative; height: 50px; margin-bottom: 51px;}
+section ul li ul:nth-of-type(6){margin-bottom: 0;}
+section ul li ul li:nth-child(2){position: absolute; left: 0; top: 29px;}
+section ul li ul li::after{content: ""; display: block; clear: both;}
+section ul li ul li input[type="checkbox"]{display: none;}
+section ul li ul li input[type="checkbox"] + label{display: inline-block; float: right; width: 55px; height: 33px; margin-right: 18px;
+                                            background: url(../images/환경설정/그룹\ -1.png) no-repeat center;}
+section ul li ul li input[type="checkbox"]:checked + label{display: inline-block; float: right; width: 55px; height: 33px;  margin-right: 18px;
+                                                        background: url(../images/환경설정/그룹\ 736.png) no-repeat 0 0;}
+section ul li ul li input[type="checkbox"] + label span{position: absolute; left: 0; top: 0; display: block; margin-bottom: 8px; 
+                                                color: #104b0b; font-family: 'GowunBatang-Bold';}
+
+
+/* footer */
+    .bar-item {
+    position: absolute;
+    overflow: hidden;
+    padding: 20px 25px;
+    cursor: pointer;
+  }
+  .bar-item:nth-of-type(1){top: 0px; left: 10px;}
+  .bar-item:nth-of-type(2){top: 0px; left: 50%; transform: translateX(-50%);}
+  .bar-item:nth-of-type(3){top: 0px; right: 10px;}
+  
+    .bar-item i {
+    z-index: 1;
+    color: #D8ECC7;
+    transition: all .3s ease-in-out;
+    font-size: 34px;
+  }
+  
+    .bar-item.pre-active i {
+    color: #fff;
+  }
+  
+    .bar-item.active i {
+    color: #fff;
+    animation: colour 1s ease-in-out;
+  }
+  
+    .bar-item.active .bar-fluid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    height: 0px;
+    animation: fluid 1s ease-in-out;
+  }
+  
+    .bar-item.active .bar-fluid:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -50%;
+    background-color: #5a8d26;
+    width: 110%;
+    height: 400%;
+    border-radius: 50%;
+  }
+  
+    .bar-item.active .bar-fluid:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -50%;
+    background-color: #5a8d26;
+    width: 110%;
+    height: 400%;
+    border-radius: 50%;
+  }
+  
+    .bar-item.active .drop {
+    position: absolute;
+    top: -2.5px;
+    left: 30.5px;
+    background-color: #fff;
+    width: 2.5px;
+    height: 2.5px;
+    border-radius: 50%;
+    animation: drop 1s ease-in-out;
+  }
+  
+  @keyframes colour {
+    0% { color: #D8ECC7; }
+    55% {
+      color: #D8ECC7;
+      transform: scale(1);
+    }
+    60% {
+      color: #fff;
+      transform: scale(1);
+    }
+    70% { transform: scale(1.1); }
+    80% { transform: scale(1); }
+  }
+  
+  @keyframes fluid {
+    0% { height: 0px; }
+    30% { height: 10px; }
+    100% { height: 0px; }
+  }
+  
+  @keyframes drop {
+    20% { top: -2.5px; }
+    50% { top: 21px; }
+    51% { top: -2.5px; }
+  }
+
+
+
+
+
